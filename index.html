@@ -35,6 +35,11 @@
           e.preventDefault();
         }
       });
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+          alert("Please do not take screenshots of this page.");
+        }
+      });
     </script>
   </head>
 
