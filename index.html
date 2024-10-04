@@ -426,7 +426,10 @@
             <div class="card portfolio-card">
               <div class="card-body">
                 <div class="card-img">
-                  <a href="https://demo.instahirin.com/dashboard" target="_blank">
+                  <a
+                    href="https://demo.instahirin.com/dashboard"
+                    target="_blank"
+                  >
                     <img
                       class=""
                       src="images/projects/instaHirin.svg"
@@ -678,19 +681,16 @@
               </div>
             </div>
           </div>
-           <div class="col">
+          <div class="col">
             <div class="card portfolio-card h-100">
               <div class="card-body">
                 <div class="card-img">
-                  <a
-                    href="https://sprightsoft.com/"
-                    target="_blank"
-                  >
-                   <div class="text-dark">
-                    <h5>Sprightsoft</h5>
-                    <h6>Spright Software Systems</h6>
-                   </div>
-                </a>
+                  <a href="https://sprightsoft.com/" target="_blank">
+                    <div class="text-dark">
+                      <h5>Sprightsoft</h5>
+                      <h6>Spright Software Systems</h6>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -707,12 +707,16 @@
             >
               <div class="col px-3 px-md-4 px-lg-5" data-aos="fade-right">
                 <h2 class="mb-5">Get In Touch</h2>
-                <form>
+                <form id="contactForm">
                   <div>
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Your Name"
+                      id="name"
+                      name="name"
+                      autocomplete="off"
+                      required
                     />
                   </div>
                   <div>
@@ -720,6 +724,10 @@
                       type="email"
                       class="form-control"
                       placeholder="Enter Email"
+                      id="email"
+                      name="email"
+                      autocomplete="off"
+                      required
                     />
                   </div>
                   <div>
@@ -727,6 +735,10 @@
                       type="text"
                       class="form-control"
                       placeholder="Subject"
+                      id="subject"
+                      name="subject"
+                      autocomplete="off"
+                      required
                     />
                   </div>
                   <div>
@@ -734,10 +746,17 @@
                       class="form-control"
                       placeholder="Type your Message (max 0-100 characters)"
                       rows="4"
+                      id="message"
+                      name="message"
+                      maxlength="100"
+                      autocomplete="off"
+                      required
                     ></textarea>
                   </div>
                   <button
-                    class="btn btn-dark px-5 py-2 fs-5 rounded-0 button-styling"
+                    type="button"
+                    onclick="sendMessage()"
+                    class="btn btn-dark px-5 py-2 fs-5 rounded-0 mt-3"
                   >
                     Send Message
                   </button>
@@ -917,6 +936,25 @@
           navbarCollapse.classList.remove("show");
         });
       });
+    </script>
+
+    <!-- Whatsapp Message  -->
+    <script>
+      function sendMessage() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const formattedMessage = `*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
+        const whatsappNumber = "917385131197";
+
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+          formattedMessage
+        )}`;
+
+        window.open(whatsappLink, "_blank");
+      }
     </script>
   </body>
 </html>
