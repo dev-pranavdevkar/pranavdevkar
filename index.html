@@ -946,14 +946,12 @@
         const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
 
-        const formattedMessage = `*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
-        const whatsappNumber = "917385131197";
+        const formattedMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+        const mailtoLink = `mailto:devpranavdevkar@gmail.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(formattedMessage)}`;
 
-        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-          formattedMessage
-        )}`;
-
-        window.open(whatsappLink, "_blank");
+        window.location.href = mailtoLink;
       }
     </script>
   </body>
