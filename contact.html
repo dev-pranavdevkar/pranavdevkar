@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Pranav Devkar">
+    <meta name="author" content="Marketify">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Pranav Devkar</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="css/css2.css" rel="stylesheet">
+
+    <!-- boxicon icons -->
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <!-- AOS css -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- custom styling -->
+    <link rel="stylesheet" type="text/css" href="css/light.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body class="body ">
+
+    <div id="preloader">
+        <span>Please wait...</span>
+    </div>
+
+    <!-- navbar -->
+    <header>
+        <div id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light p-3 rounded-3 shadow">
+                <a class="navbar-brand" href="#hero-section">Pranav Devkar</a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item mx-1 mx-lg-2">
+                            <a class="nav-link active " aria-current="page" href="#hero-section">HOME</a>
+                        </li>
+
+                        <li class="nav-item mx-1 mx-lg-2">
+                            <a class="nav-link active " aria-current="page" href="project-mgmt.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item mx-1 mx-lg-2">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- hero section -->
+        <section id="hero-section">
+            <div class="container-fluid text-white hero-section ">
+                <div class="row">
+                    <div class="col d-flex align-items-center my-5 my-md-0">
+                        <div class="container mx-0 mx-sm-2 px-2 px-lg-4">
+                            <h1>I'm Pranav <span class="d-none d-sm-inline">Devkar</span></h1>
+                            <div><span class="type-writer"></span></div>
+                            <a href="resume.pdf" download="true"> <button
+                                    class="btn btn-dark px-5 py-2 fs-5 rounded-0 mt-5 button-styling">Download
+                                    CV</button></a>
+                        </div>
+                    </div>
+                    <div class="col mt-sm-3 mt-md-0">
+                        <div class="clip-path">
+                            <img src="images/profile_pic.jpg" style="width: 100%;" alt="profile_pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact-section">
+
+            <div class="contact-stylling">
+                <div class="container py-3 px-4 ">
+                    <div class="row row-cols-1 row-cols-md-2 rounded-4 py-4 my-3 py-md-0">
+                        <div class="col px-3 px-md-4 px-lg-5" data-aos="fade-right">
+                            <h2 class="mb-5">Add Project</h2>
+                            <form id="projectForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name" id="projectName"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Project URL" name="projectURL"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" class="form-control" placeholder="Contact Number"
+                                        id="projectImage" required>
+                                </div>
+             
+                                <button type="submit" class="btn btn-dark px-5 py-2 fs-5 rounded-0">Add Project</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ul class="list-group mt-4" id="projectList"></ul>
+
+        <!-- portfolio section -->
+        <section class="container" id="skills-section">
+            <h2 class="text-info text-center fw-bold my-5">PORTFOLIO</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card portfolio-card">
+                        <div class="card-body">
+                            <div class="card-img">
+                                <a href="https://arramton.com/" target="_blank"> <img class=""
+                                        src="images/projects/arromton.png" alt="portfolio_pics"></a>
+                            </div>
+                            <a href="https://arramton.com/" target="_blank">
+                                <h5 class="card-title fw-bold text-center">Arramton Infotech Pvt. Ltd.</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card portfolio-card">
+                        <div class="card-body">
+                            <div class="card-img">
+                                <a href="https://vidyasagaracademy.in/" target="_blank"> <img class=""
+                                        src="images/projects/vidyasagar.png" alt="B4 School"></a>
+                            </div>
+                            <a href="https://vidyasagaracademy.in/" target="_blank">
+                                <h5 class="card-title fw-bold text-center">Vidyasagar Academy</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card portfolio-card">
+                        <div class="card-body">
+                            <div class="card-img">
+                                <a href="https://vidyasagaracademy.in/" target="_blank"> <img class=""
+                                        src="images/projects/vidyasagar.png" alt="B4 School"></a>
+                            </div>
+                            <a href="https://vidyasagaracademy.in/" target="_blank">
+                                <h5 class="card-title fw-bold text-center">Vidyasagar Academy</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="portfolio-section">
+            <h2 class="text-info text-center fw-bold my-5">PORTFOLIO</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card portfolio-card">
+                        <div class="card-body">
+                            <div class="card-img">
+                                <a href="https://arramton.com/" target="_blank"> <img class=""
+                                        src="images/projects/arromton.png" alt="portfolio_pics"></a>
+                            </div>
+                            <a href="https://arramton.com/" target="_blank">
+                                <h5 class="card-title fw-bold text-center">Arramton Infotech Pvt. Ltd.</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card portfolio-card">
+                        <div class="card-body">
+                            <div class="card-img">
+                                <a href="https://vidyasagaracademy.in/" target="_blank"> <img class=""
+                                        src="images/projects/vidyasagar.png" alt="B4 School"></a>
+                            </div>
+                            <a href="https://vidyasagaracademy.in/" target="_blank">
+                                <h5 class="card-title fw-bold text-center">Vidyasagar Academy</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card portfolio-card">
+                        <div class="card-body">
+                            <div class="card-img">
+                                <a href="https://vidyasagaracademy.in/" target="_blank"> <img class=""
+                                        src="images/projects/vidyasagar.png" alt="B4 School"></a>
+                            </div>
+                            <a href="https://vidyasagaracademy.in/" target="_blank">
+                                <h5 class="card-title fw-bold text-center">Vidyasagar Academy</h5>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid  px-4 px-sm-2 ">
+            <hr>
+            <div class="row ">
+                <div class="col text-center ">
+                    <p>Copyright © 2024. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- go to top -->
+    <a class="btn btn-info" href="#hero-section" id="top-button">
+        <i class="bx bxs-chevron-up"></i>
+    </a>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- typewriter js -->
+    <script src="js/typed.umd.js"></script>
+    <!-- aos js -->
+    <script src="js/aos.js"></script>
+    <!-- custom javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/project.js"></script>
+
+    <script>
+        document.getElementById('projectForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const projectName = document.getElementById('projectName').value;
+            const projectURL = document.getElementById('projectURL').value;
+            const projectImage = document.getElementById('projectImage').files[0];
+
+            if (projectImage) {
+                const reader = new FileReader();
+                reader.onloadend = function () {
+                    const project = {
+                        id: Date.now(),
+                        name: projectName,
+                        url: projectURL,
+                        image: reader.result
+                    };
+
+                    let projects = JSON.parse(localStorage.getItem('projects')) || [];
+                    projects.push(project);
+                    localStorage.setItem('projects', JSON.stringify(projects));
+
+                    alert('Project added successfully!');
+                    document.getElementById('projectForm').reset();
+                    displayProjects();
+                };
+                reader.readAsDataURL(projectImage);
+            }
+        });
+
+        function displayProjects() {
+            const projects = JSON.parse(localStorage.getItem('projects')) || [];
+            const projectList = document.getElementById('projectList');
+            projectList.innerHTML = '';
+            projects.forEach(project => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                li.innerHTML = `
+                    <div>
+                        <h5>${project.name}</h5>
+                        <a href="${project.url}" target="_blank">${project.url}</a>
+                        <br>
+                        <img src="${project.image}" alt="${project.name}" style="max-width: 100px; max-height: 100px;">
+                    </div>
+                    <button class="btn btn-danger btn-sm ms-3" onclick="deleteProject(${project.id})">Delete</button>
+                `;
+                projectList.appendChild(li);
+            });
+        }
+
+        function deleteProject(id) {
+            let projects = JSON.parse(localStorage.getItem('projects')) || [];
+            projects = projects.filter(project => project.id !== id);
+            localStorage.setItem('projects', JSON.stringify(projects));
+            displayProjects();
+        }
+
+        displayProjects();
+    </script>
+
+    <script>
+        AOS.init();
+
+        // type writer
+        var typed = new Typed('.type-writer', {
+            strings: ['Frontend Developer', 'UI Developer', 'Frontend Web Development'],
+            typeSpeed: 90,
+            backSpeed: 90,
+            loop: true,
+        })
+
+        // Collapse navbar on click
+        let navbarNav = document.querySelectorAll(".navbar-nav a")
+        let navbarCollapse = document.querySelector(".navbar-collapse")
+
+        navbarNav.forEach(element => {
+            element.addEventListener('click', function () {
+                navbarCollapse.classList.remove("show")
+            })
+        });
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
